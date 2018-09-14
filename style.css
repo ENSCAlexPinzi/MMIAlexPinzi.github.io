@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.7.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+@keyframes zoomIn {
+    from {opacity: 0; transform: scale3d(0.3, 0.3, 0.3);}
+    50% {opacity: 1;}
+}
+
+@-webkit-keyframes zoomIn {
+    from {opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3);}
+    50% {opacity: 1;}
+}
+
+@-moz-keyframes zoomIn {
+    from {opacity: 0; -moz-transform: scale3d(0.3, 0.3, 0.3);}
+    50% {opacity: 1;}
+}
+
+@keyframes pulse {
+    from {transform: scale3d(1, 1, 1);
+        -webkit-transform: translateY(.1em);
+        text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);}
+    30% {opacity: 0.5}
+    30% {transform: scale3d(1.1, 1.1, 1.1);}
+    70% {opacity: 0.5}
+    to {transform: scale3d(1, 1, 1);
+        text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.5);}
+}
+
+@-webkit-keyframes pulse {
+    from {-webkit-transform: scale3d(1, 1, 1);
+        translateY(.1em);
+        text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);}
+    30% {opacity: 0.5}
+    30% {transform: scale3d(1.1, 1.1, 1.1);}
+    70% {opacity: 0.5}
+    to {-webkit-transform: scale3d(1, 1, 1);
+        text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.5);}
+}
+
+@-moz-keyframes pulse {
+    from {-moz-transform: scale3d(1, 1, 1); }
+    50% {-moz-transform: scale3d(1.1, 1.1, 1.1);}
+    to {-moz-transform: scale3d(1, 1, 1);}
+}
+
+@keyframes fadeInLeft {
+    from {opacity: 0; transform: translate3d(-10%, 0, 0);}
+    to {opacity: 1; transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes fadeInLeft {
+from {opacity: 0; -webkit-transform: translate3d(-10%, 0, 0);}
+to {opacity: 1; -webkit-transform: translate3d(0, 0, 0);}
+}
+
+@-moz-keyframes fadeInLeft {
+    from {opacity: 0; -moz-transform: translate3d(-10%, 0, 0);}
+    to {opacity: 1; -moz-transform: translate3d(0, 0, 0);}
+}
+
+@keyframes fadeInRight {
+    from {opacity: 0; transform: translate3d(10%, 0, 0);}
+    to {opacity: 1; transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes fadeInRight {
+    from {opacity: 0; -webkit-transform: translate3d(10%, 0, 0);}
+    to {opacity: 1; -webkit-transform: translate3d(0, 0, 0);}
+}
+
+@-moz-keyframes fadeInRight {
+    from {opacity: 0; -moz-transform: translate3d(10%, 0, 0);}
+    to {opacity: 1; -moz-transform: translate3d(0, 0, 0);}
+}
+
+@-webkit-keyframes ResFade{
+    0% {opacity: 0; -webkit-transform: translate3d(0, -100px, 0);}
+    75% {opacity: 0.5; -webkit-transform: translate3d(0, 0, 0);}
+    100% {opacity: 1;}
+}
+
+@keyframes Img {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+
+
+/*------------------------------------------------*/
+
+@font-face {
+    font-family: 'Indigo';
+    font-weight: 200;
+    src: url('fonts/Buda-Light.ttf');
+}
+@font-face {
+    font-family: 'Subtitle Indigo';
+    font-weight: 200;
+    src: url('fonts/JuliusSansOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Paragraph Indigo';
+    font-weight: 200;
+    src: url('fonts/NotoSerifJP-Light.otf')
+}
+
+/*-----------------------------------------------*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fffdf0;
+    z-index: 6;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 7;
+    background-color: #485470;
+}
+
+.main-marges{
+
+    padding:150px 150px 0 150px;
+    background-color: #fffdf0;
+    z-index: 5;
+}
+
+.wrapper{
+    margin: 200px 0 40px 0;
+}
+
+.wrapper2{
+    margin: 600px 0 40px 0;
+}
+
+.wrapper3{
+    margin: 1300px 0 40px 0;
+}
+
+.fleurs-horizon {
+    margin: 0 auto;
+    text-align:center;
+}
+.column-left{
+    position: absolute;
+    float: left;
+    width:50%;
+    margin-left: 5cm;
+    z-index: 5;
+}
+
+.column-right{
+     position: absolute;
+     right:200px;
+     z-index: 4;
+ }
+
+.column-right2{
+    position: absolute;
+    right: 100px;
+    width:50%;
+    z-index: 4;
+}
+
+.column-left2{
+    position: absolute;
+    left:200px;
+    z-index: 3;
+}
+
+h1.indigo-title{
+    font-family: 'Indigo', Georgia, serif;
+    text-align: center;
+    color: #fffdf0;
+    font-size: 90px;
+    margin-bottom: 5px;
+    text-shadow: 0 45px 50px #191919;
+
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+
+    -moz-animation-name: pulse;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+
+}
+
+h2.indigo-subtitle-left{
+    font-family: 'Subtitle Indigo', Georgia, serif;
+    text-align: left;
+    color: #485470;
+    font-size: 40px;
+
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+
+    -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+
+    -moz-animation-name: fadeInLeft;
+    -moz-animation-duration: 1s;
+
+}
+
+.slide-left-right
+{
+    text-decoration:none;
+    display: inline-block;
+    color: #485470;
+}
+
+.slide-left-right:after
+{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .8s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -moz-transition: width .5s ease, background-color .5s ease;
+}
+/* Change the width and background on hover, aka sliding out */
+.slide-left-right:hover:after
+{
+    width: 100%;
+    background: #485470;
+}
+
+h2.indigo-subtitle-right{
+    font-family: 'Subtitle Indigo', Georgia, serif;
+    padding-left: 8px;
+    text-align: right;
+    color: #485470;
+    font-size: 40px;
+
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+
+    -webkit-animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+
+    -moz-animation-name: fadeInRight;
+    -moz-animation-duration: 1s;
+}
+
+h3.indigo-ressources{
+    font-family:"Subtitle Indigo", Georgia, serif;
+    text-align: center;
+    width: 100%;
+    color: #485470;
+    font-size: 30px;
+
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+
+    -webkit-animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+
+    -moz-animation-name: fadeInRight;
+    -moz-animation-duration: 1s;
+}
+
+div.dessin1 {
+
+    width: 400px;
+    height: 200px;
+    float: right;
+    padding-top: 150px;
+    background-color: lightgrey;
+
+    animation-name: zoomIn;
+    animation-duration: 4s;
+
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 4s;
+
+    -moz-animation-name: zoomIn;
+    -moz-animation: 4s;
+}
+
+div.dessin2 {
+
+    width: 500px;
+    height: 250px;
+    float: right;
+    padding-top: 150px;
+    background-color: lightgrey;
+
+    animation-name: zoomIn;
+    animation-duration: 4s;
+
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 4s;
+
+    -moz-animation-name: zoomIn;
+    -moz-animation: 4s;}
+
+p.indigo-p-1{
+    text-align: justify;
+    line-height: 35px;
+    color: #fbfdfd;
+    font-family: "Paragraph Indigo",Georgia, serif;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: #485470;
+    padding: 15px 5px 15px 45px;
+    opacity: 0.8;
+}
+
+p.indigo-p-2{
+    text-align: justify;
+    line-height: 35px;
+    color: #fbfdfd;
+    font-family: "Paragraph Indigo",Georgia, serif;
+    font-size: 16px;
+    margin-right: 30px;
+    background-color: #485470;
+    padding: 15px 5px 15px 45px;
+    opacity: 0.8;
+    float: right;
+}
+
+img.img0{
+    width: 350px;
+    height: auto;
+}
+
+img.img1,.img2,.img3{
+    animation: Img 5s ease-in;
+}
+
+img.img1{
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    right:5%;
+}
+
+img.img2{
+    width: 550px;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+}
+
+img.img3{
+    width: 500px;
+    height:auto;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+footer{
+    position: absolute;
+    bottom: -1800px;
+    width: 100%;
+}
+
+div.encornure{
+    margin: 0 auto;
+    text-align: center;
+    z-index: 5;
+}
+
+img.img4{
+    width: 250px;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    animation-name: ResFade;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    text-align: center;
+}
+
+a{
+    color: #485470;
+    font-family: "Paragraph Indigo",Georgia, serif;
+    font-size: 16px;
+    display: inline-block;
+}
+
+img.img5{
+    width: 275px;
+    height: auto;
+    position: absolute;
+    left:100px;
+    z-index: 3;
+}
+
+img.img6{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    left:1300px;
+    top:800px;
+    z-index: 2
+}
+
+img.img7{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left:150px;
+    top:1600px;
+    z-index: 1
+}
+
+li:nth-child(1){ animation-delay: 0.25s }
+li:nth-child(2){ animation-delay: 0.5s }
+li:nth-child(3){ animation-delay: 0.75s }
+li:nth-child(4){ animation-delay: 1s }
+li:nth-child(5){ animation-delay: 1.25s }
+li:nth-child(6){ animation-delay: 1.5s }
+
+p.credits{
+    color: #485470;
+    font-family: "Paragraph Indigo",Georgia, serif;
+    font-size: 11px;
+    margin-left: 5px;
+    text-align: left;
+}
+
